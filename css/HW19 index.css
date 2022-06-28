@@ -1,0 +1,159 @@
+body {
+    
+    height: 1200px;
+   
+}
+
+p {
+ color: black;
+ font-family: 'Raleway';
+ text-align: center;
+}
+
+.nameformat {
+    font-family: 'Yellowtail';
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px 0px 10px;
+}
+
+.summary{
+    font-family: 'Raleway';
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0px 0px 10px;
+}
+
+.flexcontainer{
+    display: flex;
+
+}
+
+.one{
+    font-family: 'Raleway';
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 0px 0px 0px; 
+    line-height: 0px;
+
+}
+
+.five{
+    font-family: 'Raleway';
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0px 0px 0px; 
+    line-height: 0px;
+
+}
+
+
+#gridLayout {
+    
+    display: grid;
+    width: 100%;
+    height: 50%;
+    grid-template-areas: 
+                         "box1 box2 box3"
+                         "footer footer footer";
+    grid-template-rows: 10% 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0px;
+}
+
+.heading {
+    grid-area: heady;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway';   
+    
+}
+
+.boxy1{
+    grid-area: box1;   
+    padding: 10%;    
+}
+
+.box-2{
+    grid-area: box2;
+    padding: 10%;   
+}
+
+.box-3{
+    grid-area: box3;
+    padding: 10%; 
+}
+
+img {
+    display: block;
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: contain;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+
+.foot {
+    grid-area: footer;
+    padding: 10%;  
+    text-align: center; 
+    margin: auto; 
+    
+
+}
+
+.inline-block {
+    
+    color: black;
+    display: inline;
+    vertical-align: bottom;
+    padding: 10px 10px;
+    font-family: 'Raleway';
+    
+}
+
+.navbar {
+    padding: 10%;
+    text-align: center;
+    padding: 1px 3px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    #gridLayout {   
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                             "box1"
+                             "box2"
+                             "box3"
+                             "footer";
+        margin-top: 0px;
+    }
+
+    .inline-block {
+    
+        color: black;
+        display: block;
+       
+        padding: 5px 5px;
+        font-family: 'Raleway';
+        
+    }
+
+
+  }
